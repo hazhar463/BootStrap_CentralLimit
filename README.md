@@ -11,9 +11,9 @@ This project is in response to Homework 4. In this homework we have used a norma
 
 Nomal Distributed Sample 1 (Pre & Post Boot)
 --------------------------------------------
-Pre BootStrap
+#Pre BootStrap
 <img src="https://github.com/hazhar463/BootStrap_CentralLimit/blob/master/Output/Sample%201%20-%20Normal%20Distributed%20Sample%20-%20Pre%20Boot.png"></img> </a><br>
-Pre BootStrap
+#Pre BootStrap
 <img src="https://github.com/hazhar463/BootStrap_CentralLimit/blob/master/Output/Sample%201%20-%20Normal%20Distributed%20Sample%20-%20Post%20Boot.png"></img> </a><br>
 
 
