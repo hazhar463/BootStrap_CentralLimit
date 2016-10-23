@@ -1,0 +1,62 @@
+---
+title: "Bootstrap"
+author: "Hassan Azhar"
+date: "October 22, 2016"
+output: html_document
+---
+
+
+
+```{r}
+# Creating sample with different sizes
+Sample1 <- 15
+Sample2 <- 50
+BootStrap <- 75
+
+# Normalized and Expoential Dributed vectors of the Sample1
+NormalSample1 <- rnorm(Sample1)
+ExponentialSample1 <- rexp(Sample1)
+
+# Normalized and Expoential Dributed vectors of the Sample2
+NormalSample2 <- rnorm(Sample2)
+ExponentialSample2 <- rexp(Sample2)
+
+# Create the vectors for Bootstrap Samples
+NormalSample1Boot <- numeric(BootStrap)
+NormalSample2Boot <- numeric(BootStrap)
+ExponentialSample1Boot <- numeric(BootStrap)
+ExponentialSample2Boot <- numeric(BootStrap)
+
+# Bootstrap vectors
+for(i in 1:BootStrap){
+  NormalSample1Sample <- sample(NormalSample1, size=length(NormalSample1), replace=TRUE)
+  NormalSample1Boot[i] <- mean(NormalSample1Sample)
+  
+  NormalSample2Sample <- sample(NormalSample2, size=length(NormalSample2), replace=TRUE)
+  NormalSample2Boot[i] <- mean(NormalSample2Sample)
+  
+  ExponentialSample1Sample <- sample(ExponentialSample1, size=length(ExponentialSample1), replace=TRUE)
+  ExponentialSample1Boot[i] <- mean(ExponentialSample1Sample)
+  
+  ExponentialSample2Sample <- sample(ExponentialSample2, size=length(ExponentialSample2), replace=TRUE)
+  ExponentialSample2Boot[i] <- mean(ExponentialSample2Sample)
+}
+
+# Sample 1 - Normally  Distributed Data (Pre & Post Bootstrap)
+hist(NormalSample1, main = paste("Normal Distribution Sample Size = ", Sample1, sep = " "))
+hist(NormalSample1Boot, main = paste("Bootstrap Sample Size = ", Sample1, sep = " "))
+
+
+# Sample 2 - Normally  Distributed Data (Pre & Post Bootstrap)
+hist(NormalSample2, main = paste("Normal Distribution Sample Size = ", Sample2, sep = " "))
+hist(NormalSample2Boot, main = paste("Bootstrap Sample Size = ", Sample2, sep = " "))
+
+
+# Sample 1 - Exponentially Distributed Data (Pre & Post Bootstrap)
+hist(ExponentialSample1, main = paste("Exponential Sample Size = ", Sample1, sep = " "))
+hist(ExponentialSample1Boot, main = paste("Bootstrap Sample Size =  ", Sample1, sep = " "))
+
+# Sample 2 - Exponentially Distributed Data (Pre & Post Bootstrap)
+hist(ExponentialSample2, main = paste("Exponential Sample Size = ", Sample2, sep = " "))
+hist(ExponentialSample2Boot, main = paste("Bootstrap Sample Size =  ", Sample2, sep = " "))
+
