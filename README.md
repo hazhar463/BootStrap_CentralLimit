@@ -1,6 +1,6 @@
 ---
 Author: "HASSAN AZHAR"
-Course: "+MSDS 6306 DOING DATA SCIENCE"
+Course: "MSDS 6306 - DOING DATA SCIENCE"
 Date: "OCTOBER 22, 2016"
 Email: "hazhar@smu.edu"
 ---
