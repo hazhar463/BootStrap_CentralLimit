@@ -15,7 +15,7 @@ Nomal Distributed Sample 1 (Pre & Post Boot)
 --------------------------------------------
 
 Sample 1 - Normal Distributed Sample - Pre Boot
-<img src=="https://github.com/hazhar463/BootStrap_CentralLimit/blob/master/Output/Sample%201%20-%20Normal%20Distributed%20Sample%20-%20Pre%20Boot.png"></img> </a><br>
+<img src="https://github.com/hazhar463/BootStrap_CentralLimit/blob/master/Output/Sample%201%20-%20Normal%20Distributed%20Sample%20-%20Pre%20Boot.png"></img> </a><br>
 Sample 1 - Normal Distributed Sample - Post Boot
 
 Nomal Distributed Sample 2 (Pre & Post Boot)
